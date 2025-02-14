@@ -5,22 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <section id="about">
+    <section id="about" class="section">
       <h2>About Me</h2>
-      <p>Introduce yourself here.</p>
+      <p>I'm a freelance full stack developer with a passion for creating innovative solutions. I have experience in various technologies and enjoy working on both front-end and back-end projects.</p>
     </section>
-    <section id="projects">
+    <section id="projects" class="section">
       <h2>Projects</h2>
-      <p>Showcase your projects here.</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Brief description of the project.</p>
+        </div>
+        <!-- Repeat for more projects -->
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
   <footer>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
     <p>© 2025 Your Name</p>
   </footer>
 </body>
