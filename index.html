@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -12,6 +13,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
@@ -146,13 +148,6 @@
                       ></path>
                     </svg>
                   </div>
-                  <div class="text-[#fac638]" data-icon="Star" data-size="20px" data-weight="fill">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
-                      ></path>
-                    </svg>
-                  </div>
                 </div>
                 <p class="text-[#1c180d] text-base font-normal leading-normal">
                   Rajesh did an excellent job on our e-commerce website. The site is responsive, fast, and user-friendly. Highly recommended!
@@ -217,13 +212,6 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                       <path
                         d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="text-[#d9cdab]" data-icon="Star" data-size="20px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
                       ></path>
                     </svg>
                   </div>
@@ -294,13 +282,6 @@
                       ></path>
                     </svg>
                   </div>
-                  <div class="text-[#fac638]" data-icon="Star" data-size="20px" data-weight="fill">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
-                      ></path>
-                    </svg>
-                  </div>
                 </div>
                 <p class="text-[#1c180d] text-base font-normal leading-normal">
                   Rajesh developed a blog platform that exceeded my expectations. The site is easy to manage and looks great.
@@ -330,42 +311,45 @@
               </div>
             </div>
             <h2 class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#1c180d] text-base font-medium leading-normal pb-2">Name</p>
-                <input
-                  placeholder="Your Name"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#1c180d] focus:outline-0 focus:ring-0 border-none bg-[#f4f0e6] focus:border-none h-14 placeholder:text-[#9e8747] p-4 text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#1c180d] text-base font-medium leading-normal pb-2">Email</p>
-                <input
-                  placeholder="Your Email"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#1c180d] focus:outline-0 focus:ring-0 border-none bg-[#f4f0e6] focus:border-none h-14 placeholder:text-[#9e8747] p-4 text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#1c180d] text-base font-medium leading-normal pb-2">Message</p>
-                <textarea
-                  placeholder="Your Message"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#1c180d] focus:outline-0 focus:ring-0 border-none bg-[#f4f0e6] focus:border-none min-h-36 placeholder:text-[#9e8747] p-4 text-base font-normal leading-normal"
-                ></textarea>
-              </label>
-            </div>
-            <div class="flex px-4 py-3 justify-start">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Send Message</span>
-              </button>
-            </div>
+            <form id="contactForm" onsubmit="handleContactForm(event)">
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-[#1c180d] text-base font-medium leading-normal pb-2">Name</p>
+                  <input
+                    placeholder="Your Name"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#1c180d] focus:outline-0 focus:ring-0 border-none bg-[#f4f0e6] focus:border-none h-14 placeholder:text-[#9e8747] p-4 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-[#1c180d] text-base font-medium leading-normal pb-2">Email</p>
+                  <input
+                    placeholder="Your Email"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#1c180d] focus:outline-0 focus:ring-0 border-none bg-[#f4f0e6] focus:border-none h-14 placeholder:text-[#9e8747] p-4 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-[#1c180d] text-base font-medium leading-normal pb-2">Message</p>
+                  <textarea
+                    placeholder="Your Message"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#1c180d] focus:outline-0 focus:ring-0 border-none bg-[#f4f0e6] focus:border-none min-h-36 placeholder:text-[#9e8747] p-4 text-base font-normal leading-normal"
+                  ></textarea>
+                </label>
+              </div>
+              <div class="flex px-4 py-3 justify-start">
+                <button
+                  type="submit"
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Send Message</span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <footer class="flex justify-center">
@@ -404,6 +388,22 @@
                   </div>
                 </a>
               </div>
+              <p class="text-[#9e8747] text-base font-normal leading-normal">@2024 Rajesh Kumar. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      // This script handles the form submission
+      function handleContactForm(event) {
+        event.preventDefault();
+        // TODO: process form data here (e.g., send data via fetch)
+        console.log("Form submitted");
+      }
+    </script>
+  </body>
+</html>
               <p class="text-[#9e8747] text-base font-normal leading-normal">@2024 Rajesh Kumar. All rights reserved.</p>
             </footer>
           </div>
