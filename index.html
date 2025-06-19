@@ -32,16 +32,16 @@
           </div>
           <div class="flex flex-col gap-4 @[768px]:flex-row @[768px]:gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">About</a>
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Projects</a>
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Testimonials</a>
-              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#about">About</a>
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#projects">Projects</a>
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#testimonials">Testimonials</a>
+              <a class="text-[#1c180d] text-sm font-medium leading-normal" href="#contact">Contact</a>
             </div>
-            <button
+            <!-- <button
               class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em]"
             >
               <span class="truncate">Hire Me</span>
-            </button>
+            </button> -->
           </div>
         </header>
         <div class="px-4 @[1024px]:px-40 flex flex-1 justify-center py-5">
@@ -62,18 +62,19 @@
                   </div>
                   <button
                     class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#fac638] text-[#1c180d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
+                    id="projects-btn"
+                    >
                     <span class="truncate">View Projects</span>
                   </button>
                 </div>
               </div>
             </div>
-            <h2 class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
+            <h2 id="about" class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
             <p class="text-[#1c180d] text-base font-normal leading-normal pb-3 pt-1 px-4">
               I'm a freelance web developer specializing in creating responsive and user-friendly websites. With over 5 years of experience, I've helped numerous clients achieve
               their online goals. My expertise includes front-end development, back-end development, and database management.
             </p>
-            <h2 class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Projects</h2>
+            <h2 id="projects" class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Projects</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-col gap-3 pb-3">
                 <div
@@ -106,7 +107,7 @@
                 </div>
               </div>
             </div>
-            <h2 class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Testimonials</h2>
+            <h2 id="testimonials" class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Testimonials</h2>
             <div class="flex flex-col gap-8 overflow-x-hidden bg-[#fcfbf8] p-4">
               <div class="flex flex-col gap-3 bg-[#fcfbf8]">
                 <div class="flex items-center gap-3">
@@ -152,28 +153,6 @@
                 <p class="text-[#1c180d] text-base font-normal leading-normal">
                   Rajesh did an excellent job on our e-commerce website. The site is responsive, fast, and user-friendly. Highly recommended!
                 </p>
-                <div class="flex gap-9 text-[#9e8747]">
-                  <button class="flex items-center gap-2">
-                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-inherit">10</p>
-                  </button>
-                  <button class="flex items-center gap-2">
-                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-inherit">2</p>
-                  </button>
-                </div>
               </div>
               <div class="flex flex-col gap-3 bg-[#fcfbf8]">
                 <div class="flex items-center gap-3">
@@ -219,28 +198,6 @@
                 <p class="text-[#1c180d] text-base font-normal leading-normal">
                   Rajesh created a beautiful portfolio website for me. He was professional and delivered the project on time.
                 </p>
-                <div class="flex gap-9 text-[#9e8747]">
-                  <button class="flex items-center gap-2">
-                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-inherit">8</p>
-                  </button>
-                  <button class="flex items-center gap-2">
-                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-inherit">1</p>
-                  </button>
-                </div>
               </div>
               <div class="flex flex-col gap-3 bg-[#fcfbf8]">
                 <div class="flex items-center gap-3">
@@ -286,31 +243,9 @@
                 <p class="text-[#1c180d] text-base font-normal leading-normal">
                   Rajesh developed a blog platform that exceeded my expectations. The site is easy to manage and looks great.
                 </p>
-                <div class="flex gap-9 text-[#9e8747]">
-                  <button class="flex items-center gap-2">
-                    <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-inherit">12</p>
-                  </button>
-                  <button class="flex items-center gap-2">
-                    <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-inherit">3</p>
-                  </button>
-                </div>
               </div>
             </div>
-            <h2 class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
+            <h2 id="contact" class="text-[#1c180d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
             <form id="contactForm" onsubmit="handleContactForm(event)">
               <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
                 <label class="flex flex-col min-w-40 flex-1">
@@ -355,12 +290,9 @@
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#9e8747] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#9e8747] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
-              </div>
+              
               <div class="flex flex-wrap justify-center gap-4">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/rajeshkumarjp/"  target="_blank" rel="noopener noreferrer">
                   <div class="text-[#9e8747]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
@@ -369,16 +301,7 @@
                     </svg>
                   </div>
                 </a>
-                <a href="#">
-                  <div class="text-[#9e8747]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
+                <a href="https://github.com/rajeshkumarjp">
                   <div class="text-[#9e8747]" data-icon="GithubLogo" data-size="24px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
@@ -401,14 +324,27 @@
         // TODO: process form data here (e.g., send data via fetch)
         console.log("Form submitted");
       }
+      
+      // Add smooth scrolling for internal links and "View Projects" button
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+          link.addEventListener("click", function(e) {
+            e.preventDefault();
+            var targetId = this.getAttribute("href").substring(1);
+            var targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+        document.querySelector("#projects-btn").addEventListener("click", function(e) {
+          e.preventDefault();
+          var targetElement = document.getElementById("projects");
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
     </script>
-  </body>
-</html>
-              <p class="text-[#9e8747] text-base font-normal leading-normal">@2024 Rajesh Kumar. All rights reserved.</p>
-            </footer>
-          </div>
-        </footer>
-      </div>
-    </div>
   </body>
 </html>
